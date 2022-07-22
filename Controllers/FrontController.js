@@ -12,7 +12,7 @@ class FrontController{
             var  register= await btechModel.findOne({email:email})
             const result = await userModel.findOne()
         
-        res.render('about',{data1:data ,register:register});
+        res.render('About',{data1:data ,register:register});
         }catch(error){
             //console.log(error);
         }
