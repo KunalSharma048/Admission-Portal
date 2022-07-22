@@ -1,0 +1,78 @@
+.navbar1{
+background-color: #0000009e;
+}
+
+.h1{
+        font-size: 24px;  
+        font-family: 'Gwendolyn', cursive;
+        margin-left: 40px;
+        color:wheat;
+        font-size: 30px;
+        font-weight: bold;
+        padding: 15px;
+}
+
+@media (max-width:600px){
+  .h1{
+    margin-left: 0px;
+    padding: 0px;
+    font-size: 20px;
+  }
+
+}
+
+
+header {
+    position: relative;
+    
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  header .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+  
+  /* Media Query for devices withi coarse pointers and no hover functionality */
+  
+  /* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+  
+  @media(max-width: 600px){
+    .video{
+      width: 100%;
+      
+  
+  
+    }
+    }
+
+  

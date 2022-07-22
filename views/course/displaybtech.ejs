@@ -1,0 +1,79 @@
+<%-include('../header.ejs')%>
+
+<link rel="stylesheet" href="/css/style.css">
+<link rel='stylesheet' href='/css1/header.css' />
+<link rel='stylesheet' href='/css1/about.css' />
+
+<link rel="stylesheet" href="/css/font-awesome.min.css" />
+<link rel="stylesheet" href="/css/owl.carousel.css" />
+<link rel="stylesheet" href="/style.css" />
+<br><br><br><br>
+    <h3 class="alert alert-success text-center">My Profile</h3>
+    <%# Show All Data %>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">No</th>
+                    <th scope="col">Username</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Mobile No</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Gender</th>
+                    <th scope="col">College</th>
+                    <th scope="col">Course</th>
+                    <th scope="col">Branch</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% var i=1 %>
+                    <% data1.forEach((item)=>{ %>
+
+                        <tr>
+                            <td>
+                                <%= i++ %>
+                            </td>
+                            <td>
+                                <%= item.username %>
+                            </td>
+                            <td>
+                                <%= item.email %>
+                            </td>
+                            <td>
+                                <%= item.mobile %>
+                            </td>
+                            <td>
+                                <%= item.address %>
+                            </td>
+                            <td>
+                                <%= item.gender %>
+                            </td>
+                            <td>
+                                <%= item.college %>
+                            </td>
+
+                            <td>
+                                <%= item.course %>
+                            </td>
+
+                            <td>
+                                <%= item.branch %>
+                            </td>
+                            <td>
+                                <a class="btn btn-info" href="/course/view/<%=item._id%>">view </a>
+                                <a class="btn btn-danger" href="/course/edit/<%=item._id%>">Edit </a>
+
+                            </td>
+                        </tr>
+                        <%})%>
+            </tbody>
+        </table>
+        <center>
+            <a href="/dashboard" class="btn btn-warning">Back To The Dashboard</a>
+        </center>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Admission Portal</title>
+
+    <!--BootStrap CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar1">
+        <div class="container-fluid">
+            <a href="" class="navbar-brand">
+                <h1 class="h1">ADMISSION PORTAL</h1>
+
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#pn">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id=pn>
+                <ul class="navbar-nav ms-auto pl-lg-5 ">
+
+                    <li class="nav-item ">
+                        <a class="nav-link active " href="/dashboard">
+                            HOME
+                        </a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about" style="color: white;">
+                            ABOUT
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/" style="color: white;">
+                            COURSE
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/gallery" style="color: white;">
+                            GALLERY
+                        </a>
+
+                    </li>
+
+                   
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact" style="color: white; margin-right: 90px;">
+                            CONTACT
+                        </a>
+                    </li>
+
+                 
+
+                        <a href="/logout" class="btn btn-info text-uppercase btn-outline-success btn-sm" style="color: white; margin-right: 40px;">Logout
+                        </a>
+
+                       
+
+                    
+                    <li class="nav-item">
+                       
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="/course/displaybtech" class="btn btn-success text-uppercase btn-outline-warning" style="color: white; border-radius: 50px; margin-right: 40px;"> <%= data1.username %>
+                        </a>
+                    </li>
+                </ul>
+
+
+            </div>
+            <!--collapse end-->
+        </div>
+        <!--container-fluid-->
+    </nav>
+    <!--nav end-->
+</body>
+
+</html>

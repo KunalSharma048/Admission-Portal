@@ -1,0 +1,77 @@
+<%-include('./header.ejs')%>
+<link rel="stylesheet" href="css/style.css">
+<link rel='stylesheet' href='css1/header.css' />
+
+
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+<link rel="stylesheet" href="css/owl.carousel.css" />
+<link rel="stylesheet" href="/style.css" />
+<link rel='stylesheet' href='css1/contact.css'/>
+<div class="box1">
+	<img src="https://www.icsi-eu.org/sites/default/files/2020-09/adobestock_225991884_preview.jpeg" width="100%" height="700px" class="w1">
+	
+</div>
+<br><br>
+
+
+
+
+<div class="container-fluid contactus">
+	
+	<div class="row">
+		<div class="col-md-6 contact">
+			<h4 class="h4" style="padding-bottom: 4%; font-family: 'montserrat'sans-serif;">SEND US MESSAGE</h4>
+
+			<form action="/contact/insert" method="post">
+				<div class="form-group">
+				<input type="text" name="username" placeholder="UserName" class="form-control">
+				</div>
+				<div class="form-group">
+				<input type="text" name="email" placeholder="Email" class="form-control">
+				</div>
+				<div class="form-group">
+				<input type="number" name="mobile" placeholder="Phone" class="form-control">
+				</div>
+				<div class="form-group">
+				<textarea type="text" name="message" placeholder="Message" class="form-control"></textarea>
+				</div>
+
+				<button class="btn btn-success text-center" type="submit">Submit</button>
+				</form>
+			</div>
+
+            <div class="col-md-6 contactus2">
+				<h4 class="h4" style="padding-bottom: 4%; font-family: 'montserrat'sans-serif;">CONTACT INFO</h4>
+				<strong style="color:#A52A2A; font-size: 20px;" >Address</strong>
+				<p class="p"> Nh-75, opp. Sithouli Railway Station, Sithouli, Gwalior, Madhya Pradesh 475001</p>
+				
+				<strong style="color:#A52A2A; font-size: 20px;">Mobile No</strong>
+				<p class="p">Mobile:
+				<a href="" style="text-decoration: none; color:#1F45FC;">
+         		<b>+91 7974978812</b>
+       		 	</a>
+       		 	</p>
+
+       		 	<strong style="color:#A52A2A; font-size: 20px;">For Any Enquiry</strong>
+				<p class="p">Email:
+				<a href="" style="text-decoration: none; color:#1F45FC;">
+         		<b>admission@itmgoi.in</b>
+       		 	</a>
+       		 	</p>
+
+       		 	<strong style="color:#A52A2A; font-size: 20px;">Open Timing</strong>
+				
+			
+       		 	 
+        		
+          			 <br>
+          			 Open: Monday – Saturday 
+					 <br>Time: 9:00AM – 6:00PM
+        	
+       		 	</p>
+			</div>
+	</div><!--row end-->
+</div><!--container-fluid end-->
+
+<iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.513286523486!2d78.18583691486596!3d26.147407983463243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3976c4964532abdd%3A0xe71fa0450b77e0a5!2sITM%20Group%20of%20Institution%20Technical%20Campus!5e0!3m2!1sen!2sin!4v1657379270979!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<%-include('./footer.ejs')%>

@@ -1,0 +1,66 @@
+
+
+.w{
+    width: 100%;
+    height: 600px;
+  }
+  
+  @media(max-width: 500px){
+    .w1{
+      margin-top: 20px;
+      height: 400px;
+  
+    }
+  }
+  .box1{
+    position: relative;
+      font-family: sans-serif;
+  }
+  .img-title{
+    position: absolute;
+      color:white;
+      text-align: center;
+      left: 0;
+      right: 0;
+      top: 45%;
+      letter-spacing: 0.5px;
+      line-height: 1.4;
+  
+  }
+  
+  @media(max-width: 600px){
+    .img-title{
+          text-align: center;
+          margin-right: 0;
+          margin-left: 0;
+    }
+  }
+  .contactline1{
+    font-size:40px;
+    font-family: serif;
+    font-weight: 1000;
+    letter-spacing: 3px;
+    color:black;
+  }
+  
+  @media(max-width: 600px){
+    .contactline{
+      font-size: 25px;
+    }
+  }
+  
+  .video{
+    
+    padding-top: 20px;
+    }
+  
+    @media(max-width: 600px){
+    .video{
+      width: 100%;
+  
+  
+    }
+    }
+  .li1{
+    color: #666666
+  }

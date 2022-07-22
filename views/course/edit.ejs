@@ -1,0 +1,119 @@
+
+<%-include('../header.ejs')%>
+
+<link rel="stylesheet" href="/css/style.css">
+<link rel='stylesheet' href='/css1/header.css' />
+<link rel='stylesheet' href='/css1/about.css' />
+
+<link rel="stylesheet" href="/css/font-awesome.min.css" />
+<link rel="stylesheet" href="/css/owl.carousel.css" />
+<link rel="stylesheet" href="/style.css" />
+<link rel='stylesheet' href='/css1/footer.css'/>
+	<div class="container-fluid">
+
+		<div class="row">
+
+			<div class="col-md-1"></div>
+			<div class="col-md-5" style="margin-left: 20px;">
+				<br><br><br>
+				<h2 class="text-black"><br>Edit Form</h2>
+				<p class="text-black">Once you"re edited, you can:<br><br>In Case any query, Kindly Contact:
+					7974978812</p>
+				<hr class="text-black">
+				<br><br>
+				<center>
+					<img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img4.webp"
+						width="600" height="730">
+				</center>
+			</div>
+
+
+			<div class="col-md-5"
+				style="margin-top: 240px; background: #fafaf8;margin-left: 20px; margin-bottom: 50px; height: 800px;">
+				<h3 class="text-center text-info" style="padding-top: 20px;"> Edit Form</h3>
+				<form action="/course/btechupdate/<%= data1._id %>" method="post">
+					<div class="mb-3">
+						<label>UserName:</label>
+						<input type="text" name="username" class="form-control" value="<%=data1.username %>">
+							
+					</div>
+
+					<div class="mb-3">
+						<label>Email:</label>
+						<input type="text" name="email" class="form-control" value="<%= data1.email %>">
+							
+
+					</div>
+
+					<div class="mb-3">
+						<label>Mobile Number:</label>
+						<input type="text" name="mobile" class="form-control" value="<%= data1.mobile %>">
+							
+					</div>
+
+					<div class="mb-3">
+						<label>Address:</label>
+						<br>
+						<textarea class="form-control" name="address" value=""><%= data1.address %></textarea>
+					</div>
+
+					<div class="mb-3">
+						<label>Gender:</label><br>
+						<input type="radio" name="gender" value="male" <%=data1.gender=='male' ? 'checked' : ''
+							%>>Male<br>
+						<input type="radio" name="gender" value="female" <%=data1.gender=='female' ? 'checked' : ''
+							%>>FeMale
+					</div>
+
+					<div class="mb-3">
+						<label>College</label>
+						<br>
+						<select name="college" class="form-control">
+							<option>Select college</option>
+							<option value="RGIT" <%=data1.college=='RGIT' ? 'selected' : '' %>>RGIT</option>
+							<option value="SHRIRAM COLLEGE OF ENGINEERING AND MANAGEMENT"
+								<%=data1.college=='SHRIRAM COLLEGE OF ENGINEERING AND MANAGEMENT' ? 'selected' : '' %>
+								>SHRIRAM COLLEGE OF ENGINEERING AND MANAGEMENT</option>
+							<option value="MPCT" <%=data1.college=='MPCT' ? 'selected' : '' %>>MPCT</option>
+							<option value="MITS" <%=data1.college=='MITS' ? 'selected' : '' %>>MITS</option>
+							<option value="ITM" <%=data1.college=='ITM' ? 'selected' : '' %>>ITM</option>
+							<option value="OTHERS" <%=data1.college=='OTHERS' ? 'selected' : '' %>>OTHERS</option>
+						</select>
+					</div>
+
+					<div class="mb-3">
+						<label>Course</label>
+						<br>
+						<select name="course" class="form-control">
+							<option>Select</option>
+							<option value="B.Tech" <%=data1.course=='B.Tech' ? 'selected' : '' %>>B.Tech</option>
+							<option value="M.Tech" <%=data1.course=='M.Tech' ? 'selected' : '' %>>M.Tech</option>
+							<option value="MBA" <%=data1.course=='MBA' ? 'selected' : '' %>>MBA</option>
+						</select>
+					</div>
+
+					<div class="mb-3">
+						<label>Branch</label>
+						<br>
+						<select name="branch" class="form-control" value="<%= data1.branch %>">
+							<option>Select</option>
+							<option>C.S.E</option>
+							<option>I.T</option>
+							<option>E.E</option>
+							<option>E.C</option>
+							<option>MECH.</option>
+							<option>CIVIL</option>
+							<option>AUTOMOBILE</option>
+							<option>OTHERS</option>
+						</select>
+					</div>
+					<button type="submit" class="btn btn-info">Submit</button>
+				</form>
+
+			</div>
+
+		</div>
+	</div>
+	<div class="col-md-1"></div>
+	<br>
+	<%-include('../footer.ejs')%>

@@ -1,0 +1,176 @@
+<%- include('./header.ejs')%>
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!-- Mobile Meta -->
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <!-- video section end -->
+        <title></title>
+        
+
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel='stylesheet' href='css1/header.css' />
+        <link rel='stylesheet' href='css1/about.css' />
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+        <!-- Stylesheets -->
+
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <link rel="stylesheet" href="css/owl.carousel.css" />
+        <link rel="stylesheet" href="/style.css" />
+
+
+
+
+    </head>
+
+    <body>
+        
+        <div class="col-md-12 text-center ">
+            <video class="w-100 d-block video" autoplay="autoplay" muted="muted">
+                <source src="image/video.mp4" type="video/mp4">
+
+            </video>
+            <div class="img-title">
+                <h3 class="contactline1" style="color: white; font-size:60px; font-weight: normal;">Admission Portal
+                </h3>
+    
+            </div>
+        </div>
+       
+
+        <!-- categories section -->
+        <section class="categories-section spad">
+            <div class="container">
+                <div class="section-title">
+                    <h2>welcome <%= data1.username %>
+                    </h2>
+
+                    <h2>Register Your Course</h2>
+                    <p>Course Registration means the official recording of a student's name to study a course or
+                        courses.
+                    </p>
+                </div>
+                <div class="row">
+                    <!-- categorie -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="categorie-item">
+                            <div class="ci-thumb">
+                                <img
+                                    src="https://collegevidya.com/blog/wp-content/uploads/2021/09/engineering-be-b-tech-admission-process.jpg">
+                            </div>
+                            <div class="ci-text">
+                                <h5>B.Tech</h5>
+                                <p>B.Tech is a professional undergraduate engineering degree</p>
+                                <%if(register) {%>
+
+                                    <button class="btn btn-info"><a href="/course/displaybtech">My Profile</a></button>
+                                   
+                                    <% } else{ %>
+                                        <button class="btn btn-info"><a href="/course/btech">Register</a></button>
+                                        <% } %>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- categorie -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="categorie-item">
+                            <div class="ci-thumb">
+                                <img src="https://www.besonline.in/blog/wp-content/uploads/2019/04/m.tech_.jpg"
+                                    style="height:155px; width: 370px;">
+                            </div>
+                            <div class="ci-text">
+                                <h5>M.Tech</h5>
+                                <p>M.Tech is a post-graduation degree in engineering</p>
+
+                                <%if(register1) {%>
+
+                                    <button class="btn btn-info"><a href="/course/displaybtech">My Profile</a></button>
+                                   
+                                    <% } else{ %>
+                                        <button class="btn btn-info"><a href="/course/mtech">Register</a></button>
+                                        <% } %>
+                                        
+                            </div>
+                        </div>
+                    </div>
+                    <!-- categorie -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="categorie-item">
+                            <div class="ci-thumb">
+                                <img src="https://www.edufever.com/wp-content/uploads/2020/01/DIRECT-ADMISSION-IN-MBA.jpg"
+                                    style="height:155px; width: 370px;">
+                            </div>
+                            <div class="ci-text">
+                                <h5>MBA</h5>
+                                <p>MBA is a post-graduation degree in management</p>
+                               
+
+                               
+
+                                <%if(register2) {%>
+
+                                    <button class="btn btn-info"><a href="/course/displaybtech">My Profile</a></button>
+                                   
+                                    <% } else{ %>
+                                        <button class="btn btn-info"><a href="/course/mba">Register</a></button>
+                                        <% } %>
+                                       
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- categories section end -->
+
+
+
+
+
+       
+
+
+
+
+
+
+
+
+
+
+
+        <!--====== Javascripts & Jquery ======-->
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/mixitup.min.js"></script>
+        <script src="js/circle-progress.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- jQuery Files -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/carousel.js"></script>
+        <script src="js/animate.js"></script>
+        <script src="js/custom.js"></script>
+        <!-- VIDEO BG PLUGINS -->
+        <script src="js/videobg.js"></script>
+
+
+    </html>
+    <%- include('./footer.ejs')%>

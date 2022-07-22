@@ -1,0 +1,85 @@
+.contactline2{
+    font-size:40px;
+    font-family: serif;
+    font-weight: 1000;
+    letter-spacing: 3px;
+    color:#fff;
+	
+  }
+  
+  @media(max-width: 600px){
+    .contactline{
+      font-size: 25px;
+    }
+  }
+
+.img-title1{
+	position: absolute;
+    color: #fff;
+	text-align: center;
+    left: 0;
+    right: 0;
+    top: 45%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+
+@media(max-width: 600px){
+	.img-title{
+		    text-align: center;
+    		margin-right: 0;
+	}
+}
+
+.c1{
+	text-align: center;
+	font-size: 45px;
+	font-family: serif;
+	letter-spacing: 2px;
+}
+.contactline{
+	font-size: 80px;
+	font-family: sans-serif;
+}
+
+@media(max-width: 600px){
+	.contactline{
+		font-size: 45px;
+	}
+}
+.contactus{
+	    padding-right: 70px;
+	    padding-left: 70px;
+}
+.contact{
+	padding: 3%;
+}
+
+.h4{
+	margin-bottom: 0.5rem;
+    font-weight:normal;
+    font-size: 30px;
+    line-height: 1.2;
+}
+
+.form-group{
+	margin-bottom: 1rem;
+
+}
+
+.contactus2{
+	padding: 3%;
+}
+
+.p{
+
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.p:hover a{
+	text-decoration: underline;
+	color: red;
+}
